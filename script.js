@@ -108,7 +108,7 @@ function init(){
 				};
 				
 				update = function(dt){
-					/*
+					
 					t_pile += dt;
 					
 					if (t_pile >= t_step){
@@ -121,7 +121,7 @@ function init(){
 						}
 						len = Math.sin(counter)*noise;
 					} 
-					*/
+					
 				};
 				break;
 			}
@@ -132,7 +132,7 @@ function init(){
 	worker.postMessage({cmd: "text", text: "happy", x: 120, y: 25, size: 40});
 	worker.postMessage({cmd: "text", text: "birthday", x: 60, y: 80, size: 40});
 	worker.postMessage({cmd: "start"});	
-	len = Math.sin(Math.PI / 2)*noise;
+	
 	loop();	
 }
 
